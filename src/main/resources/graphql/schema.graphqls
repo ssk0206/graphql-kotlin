@@ -1,0 +1,19 @@
+
+type Query {
+#    questions: [Question]!
+    question(qid: ID!): Question
+}
+
+type Question {
+    qid: ID!
+    content: String!
+    questionUid: ID!
+    answers: [Answer]!
+}
+
+type Answer {
+    aid: ID!
+    qid: ID!
+    content: String!
+    answerUid: ID!
+}

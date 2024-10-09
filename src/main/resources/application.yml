@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: graphql.kotlin
+  graphql:
+    path: /graphql
+    graphiql:
+      enabled: true
+logging:
+  level:
+    org.springframework: DEBUG
+    org.springframework.graphql: DEBUG
